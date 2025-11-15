@@ -1,0 +1,62 @@
+{
+  "plugin": {
+    "version": "1.0.0",
+    "auto_update_check": true,
+    "check_interval_hours": 24,
+    "backup_enabled": true,
+    "backup_count": 5
+  },
+  "logging": {
+    "level": "INFO",
+    "max_file_size_mb": 10,
+    "backup_count": 5,
+    "auto_cleanup_days": 30
+  },
+  "ui": {
+    "palette_visible": true,
+    "palette_dock_side": "left",
+    "palette_width": 300,
+    "palette_opacity": 100,
+    "ribbon_visible": true,
+    "toolbar_visible": false,
+    "theme": "system"
+  },
+  "sync": {
+    "enabled": true,
+    "interval_seconds": 30,
+    "max_retries": 3,
+    "batch_size": 50,
+    "auto_sync": true
+  },
+  "api": {
+    "base_url": "https://api.structural.example.com",
+    "timeout_seconds": 30,
+    "retry_count": 3,
+    "cache_enabled": true,
+    "cache_ttl_minutes": 60
+  },
+  "units": {
+    "system": "metric",
+    "length_unit": "mm",
+    "force_unit": "kN",
+    "moment_unit": "kNm",
+    "stress_unit": "MPa"
+  },
+  "structural": {
+    "default_material": "Concrete C30",
+    "default_reinforcement_grade": "500 MPa",
+    "safety_factors": {
+      "concrete": 1.5,
+      "steel": 1.15,
+      "load": 1.35
+    },
+    "auto_calculate": true,
+    "validate_geometry": true
+  },
+  "license": {
+    "key": "",
+    "type": "trial",
+    "expires_at": null,
+    "features": []
+  }
+}
